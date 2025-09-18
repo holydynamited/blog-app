@@ -8,7 +8,7 @@ const Write = () => {
   return (
     <div className='add'>
       <div className="content">
-        <input type="text" placeholder='Title' />
+        <input className='input-post' type="text" placeholder='Title' />
         <div className="editor-container">
         <ReactQuill className='editor' theme="snow" value={value} onChange={setValue} />
         </div>
@@ -22,7 +22,7 @@ const Write = () => {
              <span>
               <b>Visibility: </b>Public
             </span>
-            <input type="file" name='' id='file' />
+            <input style={{display:"none"}} type="file" id='file' name='' />
             <label className='file'  htmlFor="file">Upload Image</label>
             <div className="buttons">
               <button>Save as a draft</button>

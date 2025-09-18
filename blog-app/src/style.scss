@@ -311,7 +311,7 @@ $lightGreen: #b9e7e7;
           display: flex;
           flex-direction: column;
           gap: 20px;
-          input{
+          .input-post{
             padding: 10px;
             border: 1px solid lightgray;
           }
@@ -325,36 +325,66 @@ $lightGreen: #b9e7e7;
           }
          
         }
+
+
+
          .menu{
           flex: 2;
           display: flex;
           flex-direction: column;
           gap: 20px;
           .item{
-            border: 1px solid lightgray;
-            padding: 10px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            font-size: 12px;
-            color: #555;
-          }
+          display: flex;
+          border: 1px solid lightgray;
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          color: #555;
+        
           h1{
             font-size: 20px;
-            
+            margin: 0;
+          }
+          label{
+            text-decoration: underline;
+            font-size: 12px;
           }
           .file{
-            text-decoration: underline;
             cursor: pointer;
           }
+         
+          .buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            width: 100%;  
 
+            :first-child{
+              cursor: pointer;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              padding:3px 5px
+              
+            }
+             :last-child{
+              cursor: pointer;
+              color: white;
+              background-color: teal;
+              border: 1px solid teal;
+              padding:3px 5px
+              
+            }
+            
+          }
         }
         
       }
     }
- 
   }
-    
+}
 
 
